@@ -1,3 +1,31 @@
+# TinyStories: Exploring Training Data Quality vs. Quantity with nanoGPT
+
+This repository showcases the implementation and findings of **"Is Training Data Quality or Quantity More Impactful to Small Language Model Performance?"**, a research project conducted by Aryan Sajith and Krishna Chaitanya Rao Kathala at the University of Massachusetts Amherst. The study investigates how data quality and quantity affect the performance of small language models (SLMs), using controlled dataset variations of the [TinyStories dataset](https://huggingface.co/datasets/roneneldan/TinyStories) and leveraging the lightweight nanoGPT framework for training and evaluation.
+
+## Key Highlights
+
+- **Research Objective:** Compare the impact of training data quality (through duplication rates) and quantity (through dataset size) on SLM performance.
+- **Findings:** 
+  - Data quality is more critical than quantity for SLMs.
+  - Minimal duplication can improve model accuracy (+0.87%) without significantly increasing perplexity, but excessive duplication (-40% accuracy drop) harms performance.
+- **Methodology:** 
+  - Utilized nanoGPT's character-level recurrent neural network for consistent experimentation.
+  - Training conducted on accessible hardware (M1 MacBook Pro), demonstrating potential for democratizing AI research.
+- **Code & Datasets:** 
+  - Preprocessing scripts, stochastic dataset variations, and training configurations are open-sourced.
+  - [Codebase Link](https://github.com/Aryan-Sajith/nanoGPT/tree/master/data/tinyStories)
+  - [Dataset Variations](https://drive.google.com/drive/u/1/folders/1gJi6v5nH314OkCwN8xj4oaCpGfy95GvS)
+
+## Why nanoGPT?
+
+nanoGPT is a minimalist yet powerful framework for training GPT-like models, offering:
+- Simplicity and readability, ideal for rapid experimentation and modification.
+- Support for efficient character-level modeling, as required for TinyStories.
+- Compatibility with accessible hardware setups, aligning with the goals of this research to make AI more inclusive and sustainable.
+
+The research builds on the nanoGPT foundation, adapting it to explore the nuanced trade-offs between data quality and quantity in SLMs. The findings aim to pave the way for accessible, resource-efficient AI solutions.
+
+
 
 # nanoGPT
 
