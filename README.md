@@ -13,7 +13,7 @@ This repository showcases the implementation and findings of **"Is Training Data
   - Training conducted on accessible hardware (M1 MacBook Pro), demonstrating potential for democratizing AI research.
 - **Code & Datasets:** 
   - Preprocessing scripts, stochastic dataset variations, and training configurations are open-sourced.
-  - [Codebase Link](https://github.com/Aryan-Sajith/nanoGPT/tree/master/data/tinyStories)
+  - [Codebase Link](https://github.com/Aryan-Sajith/URV-Data_Quantity_VS_Data_Quality-Research/tree/main/data/tinyStories)
   - [Dataset Variations](https://drive.google.com/drive/u/1/folders/1gJi6v5nH314OkCwN8xj4oaCpGfy95GvS)
 
 ## Why nanoGPT?
