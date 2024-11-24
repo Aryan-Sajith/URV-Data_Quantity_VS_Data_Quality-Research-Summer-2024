@@ -23,9 +23,7 @@ nanoGPT is a minimalist yet powerful framework for training GPT-like models, off
 - Support for efficient character-level modeling, as required for TinyStories.
 - Compatibility with accessible hardware setups, aligning with the goals of this research to make AI more inclusive and sustainable.
 
-The research builds on the nanoGPT foundation, adapting it to explore the nuanced trade-offs between data quality and quantity in SLMs. The findings aim to pave the way for accessible, resource-efficient AI solutions.
-
-
+The research builds on the nanoGPT foundation, adapting it to explore the nuanced trade-offs between data quality and quantity in SLMs. The findings aim to pave the way for accessible, resource-efficient AI solutions. Following is the guide on how to use nanoGPT:
 
 # nanoGPT
 
