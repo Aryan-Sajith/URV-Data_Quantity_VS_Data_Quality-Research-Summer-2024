@@ -3,7 +3,7 @@
 [Original Dataset](https://huggingface.co/datasets/roneneldan/TinyStories) License: [CDLA-Sharing-1.0](https://spdx.org/licenses/CDLA-Sharing-1.0.html) shared by Ronen Eldan.
 - Dataset variations obtained via the prepare-*.py scripts are also licensed under [CDLA-Sharing-1.0](https://spdx.org/licenses/CDLA-Sharing-1.0.html). Specific stochastic variations used for my work are shared [here](https://drive.google.com/drive/folders/1gJi6v5nH314OkCwN8xj4oaCpGfy95GvS?usp=drive_link) and licensed under [CDLA-Sharing-1.0](https://spdx.org/licenses/CDLA-Sharing-1.0.html).
 
-Prepared the baseline dataset used to train a character-level rnn language model.
+Prepared the baseline dataset used to train a character-level attention-based language model.
 
 After running `prepare.py`:
 - train.txt/train.bin & val.txt/val.bin have been created from the tinyStories dataset
