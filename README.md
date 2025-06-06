@@ -4,17 +4,46 @@ This repository showcases the implementation and findings of **"Is Training Data
 
 ## Key Highlights
 
-- **Research Objective:** Compare the impact of training data quality (through duplication rates) and quantity (through dataset size) on SLM performance.
+- **Research Objective:** Compare the impact of training data quality (through duplication rates) and quantity (through dataset size) on SLM performance.  
 - **Findings:** 
   - Data quality is more critical than quantity for SLMs.
-  - Minimal duplication can improve model accuracy (+0.87%) without significantly increasing perplexity, but excessive duplication (-40% accuracy drop) harms performance.
+  - Minimal duplication can improve model accuracy (+0.87%) without significantly increasing perplexity, but excessive duplication (–40% accuracy drop) harms performance.
 - **Methodology:** 
-  - Utilized nanoGPT's character-level recurrent neural network for consistent experimentation.
+  - Utilized nanoGPT’s character-level attention-based neural network for consistent experimentation.
   - Training conducted on accessible hardware (M1 MacBook Pro), demonstrating potential for democratizing AI research.
 - **Code & Datasets:** 
   - Preprocessing scripts, stochastic dataset variations, and training configurations are open-sourced.
-  - [Codebase Link](https://github.com/Aryan-Sajith/URV-Data_Quantity_VS_Data_Quality-Research/tree/main/data/tinyStories)
+  - [Codebase: data/tinyStories](https://github.com/Aryan-Sajith/URV-Data_Quantity_VS_Data_Quality-Research/tree/main/data/tinyStories)  
   - [Dataset Variations](https://drive.google.com/drive/u/1/folders/1gJi6v5nH314OkCwN8xj4oaCpGfy95GvS)
+
+## Primary Training Algorithm
+
+All of our TinyStories-specific model code lives under:
+
+`data/tinyStories`
+
+This script implements the character-level SLM training loop and evaluation logic used in the paper.
+
+## Reproduction Details
+
+To reproduce the exact training configurations referenced in the paper, see:
+
+- **Core Training Config:**  
+  `config/train_tinyStories.py`  
+  Contains optimizer settings, scheduler, batch size, learning rate, tokenizer details and more for our TinyStories experiments.
+- **Auxiliary Training Logic:**  
+  `train.py`  
+  Implements the main training algorithm for logging, checkpointing, and evaluation of the model.
+
+> These two files capture all hyperparameters and scripts needed to reproduce our results. If you have questions or run into issues, please open an issue on this repo.
+
+---
+
+## Original nanoGPT Usage Guide ⬇️
+
+Below is the nanoGPT overview and usage instructions, unchanged from the original fork. Everything from this point onward is part of the upstream nanoGPT documentation.
+
+---
 
 ## Why nanoGPT?
 
